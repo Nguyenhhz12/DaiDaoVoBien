@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Cai dat phan mem can thiet
         run: |
@@ -27,7 +27,7 @@ jobs:
           zip -g game-chua-ky.apk game.love
 
       - name: Luu file APK san pham
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: GameTuTien-APK
           path: game-chua-ky.apk
